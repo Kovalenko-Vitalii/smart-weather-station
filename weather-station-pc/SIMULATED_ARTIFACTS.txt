@@ -1,0 +1,21 @@
+SIMULATED TRAINING ARTIFACTS — READ BEFORE USE
+
+The database and model in this folder were generated from the project's
+deterministic software sensor simulator. They are NOT real Sense HAT readings,
+not measurements from your room, and not evidence of real-world forecast
+accuracy.
+
+PC:
+- data/simulated_training.db: 1,800 simulated observations.
+- models/temperature_model.json: model trained from those simulated observations.
+- models/temperature_model.report.json: chronological validation/test metrics.
+- models/temperature_model.cases.json: held-out test cases.
+
+Raspberry Pi:
+- models/temperature_model.json: copy of the same simulated-data model for
+  testing the local inference runtime.
+
+For your final assessment, clearly identify these as simulated results. Replace
+them with a model trained from real Sense HAT data if the guide/assessment
+requires real measurements. Do not mix simulated and real rows in one training
+run.
